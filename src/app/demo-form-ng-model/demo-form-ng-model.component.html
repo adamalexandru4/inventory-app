@@ -1,0 +1,18 @@
+<span style="margin-top: 1rem;"></span>
+<div class="ui raised segment">
+    <h2 class="ui header">Demo Form ngModel</h2>
+    <form (ngSubmit)="onSubmit(productName)"
+            class="ui form">
+
+        <div class="ui info message">
+            The product name is: {{ productName }}
+        </div>
+
+        <div class="field">
+            <label for="productName">Product name</label>
+            <input type="text" id="productName" placeholder="Product Name" name="productName" [(ngModel)]="productName">
+        </div>
+
+        <button type="submit" class="ui button">Submit</button>
+    </form>
+</div>
